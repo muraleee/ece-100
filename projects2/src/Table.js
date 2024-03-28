@@ -31,7 +31,7 @@ function Form(props) {
               method: "POST",
               headers: {"Content-Type" : "application/json"},
               //mode: "cors",
-              body: JSON.stringify({'checkIn':inputValue, 'project': props.projectid})
+              body: JSON.stringify({'qty':inputValue, 'projectid': props.projectid})
           })
   
           await fetch("/checkIn/", requestOptions)
